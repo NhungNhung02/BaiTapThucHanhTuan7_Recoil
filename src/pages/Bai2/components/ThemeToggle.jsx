@@ -12,7 +12,7 @@ export default function ThemeToggle() {
   };
 
   return (
-    <button onClick={toggleTheme}>
+    <button style={{borderRadius:"12px", fontSize: "20px",}} onClick={toggleTheme}>
       Switch to {theme === "light" ? "Dark" : "Light"}
     </button>
   );

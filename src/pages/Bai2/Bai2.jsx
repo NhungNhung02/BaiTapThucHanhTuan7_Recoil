@@ -16,7 +16,7 @@ export default function Bai2() {
     >
       <h1 style={{color: "green"}}>Bài 2: Theme Toggle (Dark / Light)</h1>
       <ThemeToggle />
-      <p>Current theme: {theme}</p>
+      <p style={{ fontSize: "20px", padding:"10px"}}>Current theme: {theme}</p>
     </div>
   );
 }
