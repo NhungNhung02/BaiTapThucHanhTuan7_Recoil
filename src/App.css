@@ -8,6 +8,25 @@
   transition: border-color 0.3s;
   margin-bottom: 24px;
 
+  .btn{
+    padding:14px 28px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: poniter;
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn.dark{
+    background: black;
+    color: white;
+  
+  }
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
   &:hover {
     border-color: var(--accent-border);
   }
