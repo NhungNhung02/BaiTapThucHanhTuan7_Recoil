@@ -1,20 +1,21 @@
 import { useState } from "react";
-import { useRecoilState } from "recoil";
+import { useSetRecoilState } from "recoil";
 import { todoListState } from "../../recoil/todoState";
 
-export default function toDoListState() {
-    const [inputValue, setInPutValue] = useState("");
-
-    const setTodoList = useRecoilState(toDoListState);
+export default function TodoInput() {
+    const [inputValue, setInputValue] = useState("");
+    // useSetRecoilState chỉ dùng để ghi, giúp component không bị render lại vô ích khi list thay đổi
+    const setTodoList = useSetRecoilState(todoListState);
 
     const addItem = () => {
-        if (!inputValue.trim())
-            return;
+        if (!inputValue.trim()) return;
         setTodoList((oldList) => [
             ...oldList,
             { id: Date.now(), text: inputValue, isComplete: false },
-        ]); setInPutValue("");
+        ]);
+        setInputValue("");
     };
+
     return (
         <div style={{ marginBottom: "20px" }}>
             <input
@@ -25,5 +26,5 @@ export default function toDoListState() {
             />
             <button onClick={addItem} style={{ marginLeft: "10px", cursor: "pointer" }}>Thêm</button>
         </div>
-    )
+    );
 }
