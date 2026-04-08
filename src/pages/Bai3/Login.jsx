@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSetRecoilState } from "recoil";
-import { userState } from "./userState";
+import { userState } from "../../recoil/userState";
 
 export default function Login() {
   const [username, setUsername] = useState("");
