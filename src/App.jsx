@@ -6,7 +6,7 @@ function App() {
   return (
     <>
     <div>
-     <Bai1/>
+     {/*<Bai1/> */}
      <Bai2/>
      </div>
     </>

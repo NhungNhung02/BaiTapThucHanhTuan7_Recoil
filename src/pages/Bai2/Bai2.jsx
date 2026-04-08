@@ -1,7 +1,6 @@
 import { useRecoilValue } from "recoil";
 import { themeState } from "./state/themeState";
 import ThemeToggle from "./components/ThemeToggle";
-//import './App.css'
 export default function Bai2() {
   const theme = useRecoilValue(themeState);
 
@@ -15,7 +14,7 @@ export default function Bai2() {
 
       }}
     >
-      <h1>Bài 2: Theme Toggle (Dark / Light)</h1>
+      <h1 style={{color: "green"}}>Bài 2: Theme Toggle (Dark / Light)</h1>
       <ThemeToggle />
       <p>Current theme: {theme}</p>
     </div>
