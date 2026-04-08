@@ -4,6 +4,8 @@ import Bai2 from "./pages/Bai2/Bai2";
 import Bai3 from "./pages/Bai3/Bai3";
 import Bai4 from "./pages/Bai4/Bai4";
 import Bai5 from "./pages/Bai5/Bai5";
+import Bai6 from "./pages/Bai6/Bai6";
+
 
 function App() {
 
@@ -16,7 +18,8 @@ function App() {
         {/*<h1 style={{ color: 'red' }}></h1> */}
         {/*<Bai3 /> */}
         {/*<Bai4 /> */}
-        <Bai5 />
+        {/*<Bai5 /> */}
+        <Bai6 />
 
       </div>
     </>
