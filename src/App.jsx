@@ -7,6 +7,7 @@ import Bai5 from "./pages/Bai5/Bai5";
 import Bai6 from "./pages/Bai6/Bai6";
 import Bai8 from "./pages/Bai8/Bai8";
 import Bai9 from "./pages/Bai9/Bai9";
+import Bai7 from "./pages/Bai7/Bai7";
 
 function App() {
 
@@ -22,7 +23,8 @@ function App() {
         {/*<Bai5 /> */}
         {/*<Bai6 /> */}
         {/* <Bai8 /> */}
-        <Bai9 />
+        {/*<Bai9 /> */}
+        <Bai7 />
       </div>
     </>
   )
